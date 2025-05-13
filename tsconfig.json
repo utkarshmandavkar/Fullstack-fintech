@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress.config.js", "cypress/e2e/login.cy.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress.config.js", "cypress/e2e/login.cy.js", "app/backend//integration/integration.test.js", "src/__tests__/api/user-api.spec.js"],
   "exclude": ["node_modules"]
 }

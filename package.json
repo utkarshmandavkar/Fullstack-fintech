@@ -11,7 +11,8 @@
     "compose:up": "cd app && docker-compose up -d",
     "compose:up:build": "cd app && docker-compose up -d --build",
     "compose:down": "cd app && docker-compose down --remove-orphans",
-    "postinstall": "cd app/backend && npm i && cd ../frontend && npm i"
+    "postinstall": "cd app/backend && npm i && cd ../frontend && npm i",
+    "test:api": "mocha src/__tests__/api/**/*.spec.js"
   },
   "author": "Raphael Martins",
   "license": "ISC",
@@ -21,15 +22,18 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "5.3.1",
     "@typescript-eslint/parser": "5.3.1",
+    "chai": "^5.2.0",
     "cypress": "^14.3.3",
+    "dotenv": "^16.5.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "15.0.0",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-sonarjs": "0.10.0",
+    "mocha": "^11.2.2",
+    "supertest": "^7.1.1",
     "ts-node": "10.7.0",
     "ts-node-dev": "1.1.8",
-    "typescript": "4.4.4",
-    "test": "jest"
+    "typescript": "4.4.4"
   }
 }
